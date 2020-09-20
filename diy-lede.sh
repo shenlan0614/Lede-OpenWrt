@@ -35,8 +35,8 @@ git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
 
 #我自己需要安装的软件**************
-git clone https://github.com/xrouterservice/luci-app-koolddns  #DDNS解析工具（解析阿里域名）
-git clone https://github.com/apollo-ng/luci-theme-darkmatter  #简洁黑色主题
+git clone -b master https://github.com/xrouterservice/luci-app-koolddns  #DDNS解析工具（解析阿里域名）
+src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git  #简洁黑色主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git   #毛玻璃效果的漂亮登录界面的明暗主题
 git clone https://github.com/myflavor/luci-app-adbyby-plus  #广告屏蔽大师 Plus+
 
