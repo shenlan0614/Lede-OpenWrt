@@ -8,7 +8,7 @@ rm -rf package/lean/luci-theme-argon
 #
 
 # 修改openwrt登陆地址,把下面的192.168.123.1修改成你想要的就可以了，其他的不要动
-sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 
 
 #修改版本内核（下面两行代码前面有#为源码默认最新5.4内核,没#为4.19内核,默认修改X86的，其他机型L大那里target/linux查看，对应修改下面的路径就好）
@@ -31,13 +31,13 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  #主题-edge-动态登陆界面
 git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash  #openclash出国软件
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
-git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
+#git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
 
 #我自己需要安装的软件**************
 git clone https://github.com/xrouterservice/luci-app-koolddns  #DDNS解析工具（解析阿里域名）
 git clone https://github.com/apollo-ng/luci-theme-darkmatter  #简洁黑色主题
-git clone https://github.com/jerrykuku/luci-theme-argon  #毛玻璃效果的漂亮登录界面的明暗主题
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git   #毛玻璃效果的漂亮登录界面的明暗主题
 git clone https://github.com/myflavor/luci-app-adbyby-plus  #广告屏蔽大师 Plus+
 
 
